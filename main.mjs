@@ -8,8 +8,8 @@ export class Injector {
 
     /**
      * Registers an instance with the injector.
-     * @template [T=any] - Instance type
-     * @template [Q=Type<T>] - Constructor type
+     * @template T - Instance type
+     * @template Q - Constructor type
      * @param {Q} type - Constructor/identifier to register
      * @param {T} instance - Instance to store
      */
@@ -41,4 +41,3 @@ export class Injector {
      */
     get = (type) => this.inject(type);
 }
-

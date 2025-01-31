@@ -1,16 +1,25 @@
 {
-  "name": "@collidor/injector",
-  "version": "1.0.0",
-  "description": "A tiny dependency injection container with type inference",
-  "type": "module",
-  "exports": {
-    "import": "./main.mjs",
-    "require": "./main.cjs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "@collidor/injector",
+    "version": "1.0.2",
+    "description": "A tiny dependency injection container with type inference",
+    "type": "module",
+    "exports": {
+        "import": "./main.mjs",
+        "require": "./main.cjs"
+    },
+    "scripts": {
+        "test": "deno test"
+    },
+    "keywords": [
+        "DI",
+        "dependency injection",
+        "container",
+        "injector",
+        "injection",
+        "dependency",
+        "injection container",
+        "dependency injection container"
+    ],
+    "author": "Alykam Burdzaki <alykam@gmail.com> (https://alykam.com)",
+    "license": "MIT"
 }
