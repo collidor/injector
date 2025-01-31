@@ -1,7 +1,11 @@
 {
     "name": "@collidor/injector",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "A tiny dependency injection container with type inference",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/collidor/injector"
+    },
     "type": "module",
     "exports": {
         "import": "./main.mjs",

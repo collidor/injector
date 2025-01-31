@@ -1,6 +1,6 @@
 {
     "name": "@collidor/injector",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "MIT",
     "exports": "./main.mjs",
     "publish": {
