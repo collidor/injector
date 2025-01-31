@@ -1,6 +1,6 @@
 {
     "name": "@collidor/injector",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A tiny dependency injection container with type inference",
     "type": "module",
     "exports": {
