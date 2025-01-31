@@ -20,8 +20,10 @@ jobs:
         with:
           node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
-      - run: npx jsr publish
       - run: npm ci
+      - run: npm run build
+      - name: Publish package
+        run: npx jsr publish
       - run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

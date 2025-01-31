@@ -1,13 +1,18 @@
 {
     "name": "@collidor/injector",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "license": "MIT",
-    "exports": "./main.mjs",
+    "exports": "./src/main.ts",
     "publish": {
         "include": [
-            "main.mjs",
+            "./src/**/*",
             "README.md",
+            "deno.json",
+            "deno.lock",
             "LICENSE"
+        ],
+        "exclude": [
+            "dist"
         ]
     },
     "tasks": {

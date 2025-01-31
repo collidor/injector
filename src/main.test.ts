@@ -1,5 +1,5 @@
 import { assertEquals, assertThrows } from "jsr:@std/assert";
-import { Injector } from "./main.mjs";
+import { Injector } from "./main.ts";
 
 Deno.test("Injector - should register and get value", () => {
     const injector = new Injector();

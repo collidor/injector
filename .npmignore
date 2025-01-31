@@ -1,4 +1,5 @@
 deno.json
 deno.lock
-**/*.test.mjs
+**/*.test.ts
 .github
+!dist
