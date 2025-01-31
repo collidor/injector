@@ -3,7 +3,7 @@ export type Type<T> = new (...args: any[]) => T;
 export class Injector {
     private instances = new Map<any, any>();
 
-    public register = <T = any, Q = any>(type: Q, instance: T) => {
+    public register = <T = any, Q = any>(type: Q, instance: T): void => {
         this.instances.set(type, instance);
     };
 
