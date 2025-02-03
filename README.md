@@ -1,3 +1,5 @@
+[![Codecov](https://codecov.io/gh/collidor/injector/branch/main/graph/badge.svg)](https://codecov.io/gh/collidor/injector)
+
 # Injector
 
 A lightweight, type-aware dependency injection container for JavaScript/TypeScript (with JSDoc support), supporting class and function dependencies with type inference.
