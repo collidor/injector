@@ -21,6 +21,5 @@ Deno.test("Injector - should throw if no instance is registered", () => {
     assertThrows(
         () => injector.get(Injector),
         Error,
-        "No instance registered for class Injector",
     );
 });

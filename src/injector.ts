@@ -15,6 +15,9 @@ export class Injector {
     >(
         type: T,
     ): Q => {
+        if (!this.instances.has(type)) {
+            throw new Error(`No instance registered for class ${type}`);
+        }
         return this.instances.get(type) as Q;
     };
 
