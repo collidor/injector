@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "/dist",
+    "rootDir": "./src",
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "moduleResolution": "nodenext",
+    "target": "es5",
+    "module": "NodeNext",
+    "lib": ["ESNext", "DOM"]
+  },
+  "exclude": ["/node_modules", "/dist"]
+}

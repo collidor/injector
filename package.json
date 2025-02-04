@@ -1,22 +1,18 @@
 {
     "name": "@collidor/injector",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "A tiny dependency injection container with type inference",
     "repository": {
         "type": "git",
         "url": "https://github.com/collidor/injector"
     },
     "type": "module",
-    "exports": {
-        ".": {
-            "types": "./src/main.ts",
-            "import": "./dist/main.mjs",
-            "require": "./dist/main.cjs"
-        }
-    },
+    "main": "dist/main.cjs",
+    "module": "dist/main.mjs",
+    "types": "dist/main.d.ts",
     "scripts": {
         "test": "deno test",
-        "build": "tsup src/main.ts --format esm,cjs"
+        "build": "tsup src/main.ts --sourcemap --dts --format esm,cjs"
     },
     "keywords": [
         "DI",
@@ -31,6 +27,7 @@
     "author": "Alykam Burdzaki <alykam@gmail.com> (https://alykam.com)",
     "license": "MIT",
     "devDependencies": {
+        "@swc/core": "^1.10.14",
         "tsup": "^8.3.6",
         "typescript": "^5.7.3"
     }
