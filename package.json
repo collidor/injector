@@ -1,6 +1,6 @@
 {
     "name": "@collidor/injector",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "A tiny dependency injection container with type inference",
     "repository": {
         "type": "git",
@@ -8,7 +8,7 @@
     },
     "type": "module",
     "main": "dist/main.cjs",
-    "module": "dist/main.mjs",
+    "module": "dist/main.js",
     "types": "dist/main.d.ts",
     "scripts": {
         "test": "deno test",
