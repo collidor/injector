@@ -10,7 +10,7 @@ export class Injector {
   public inject = <
     T,
     Q = T extends Type<infer M> ? M
-      : T extends (...args: unknown[]) => infer R ? R
+      : T extends (...args: any[]) => infer R ? R
       : any,
   >(
     type: T,
@@ -28,7 +28,7 @@ export class Injector {
   public get = <
     T,
     Q = T extends Type<infer M> ? M
-      : T extends (...args: unknown[]) => infer R ? R
+      : T extends (...args: any[]) => infer R ? R
       : any,
   >(
     type: T,
