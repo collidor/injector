@@ -1,6 +1,6 @@
 {
     "name": "@collidor/injector",
-    "version": "2.1.1",
+    "version": "2.2.0",
     "description": "A tiny dependency injection container with type inference",
     "repository": {
         "type": "git",
@@ -12,7 +12,8 @@
     "types": "dist/main.d.ts",
     "scripts": {
         "test": "deno test",
-        "build": "tsup src/main.ts --sourcemap --dts --format esm,cjs"
+        "build": "tsup src/main.ts --sourcemap --dts --format esm,cjs",
+        "test:coverage": "deno test --coverage=cov_profile && deno coverage --html cov_profile"
     },
     "keywords": [
         "DI",

@@ -1,4 +1,6 @@
 [![Codecov](https://codecov.io/gh/collidor/injector/branch/main/graph/badge.svg)](https://codecov.io/gh/collidor/injector)
+[![npm version](https://img.shields.io/npm/v/@collidor/injector)](https://www.npmjs.com/package/@collidor/injector)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Injector
 
