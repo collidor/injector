@@ -43,6 +43,7 @@ Deno.test("Injector - should use parent injector if cannot find instance", () =>
 
   injector.register(Injector, injector);
   assertEquals(injector.get(Injector), injector);
+
   assertEquals(childInjector.get(Injector), injector);
 
   injector.unregister(Injector);
