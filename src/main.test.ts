@@ -52,3 +52,14 @@ Deno.test("Injector - should use parent injector if cannot find instance", () =>
     Error,
   );
 });
+
+Deno.test("Injector - safeInject should return null if no instance is registered", () => {
+  const injector = new Injector();
+
+  assertEquals(injector.safeInject(Injector), null);
+  assertEquals(injector.safeGet(Injector), null);
+
+  const childInjector = new Injector(injector);
+  assertEquals(childInjector.safeInject(Injector), null);
+  assertEquals(childInjector.safeGet(Injector), null);
+});

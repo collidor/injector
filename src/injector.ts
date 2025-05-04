@@ -41,4 +41,30 @@ export class Injector {
   >(
     type: T,
   ): Q => this.inject(type);
+
+  public safeInject = <
+    T,
+    Q = T extends Type<infer M> ? M
+      : T extends (...args: any[]) => infer R ? R
+      : any,
+  >(
+    type: T,
+  ): Q | null => {
+    if (!this.instances.has(type)) {
+      if (this.parentInjector) {
+        return this.parentInjector.safeInject(type);
+      }
+      return null;
+    }
+    return this.instances.get(type);
+  };
+
+  public safeGet = <
+    T,
+    Q = T extends Type<infer M> ? M
+      : T extends (...args: any[]) => infer R ? R
+      : any,
+  >(
+    type: T,
+  ): Q | null => this.safeInject(type);
 }
