@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/collidor/injector/compare/v1.0.0...v1.0.1) (2026-08-15)
+
+
+### Bug Fixes
+
+* **build:** add @swc/core devDependency required for tsup es5 build target ([369b752](https://github.com/collidor/injector/commit/369b7522270d5cc57346174373ec3853a0129332))
+
 # 1.0.0 (2026-08-15)
 
 
