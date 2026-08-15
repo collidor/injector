@@ -1,51 +1,51 @@
 {
-    "name": "@collidor/injector",
-    "version": "1.0.0",
-    "publishConfig": {
-        "access": "public"
-    },
-    "description": "A tiny dependency injection container with type inference",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/collidor/injector.git"
-    },
-    "type": "module",
-    "main": "dist/main.cjs",
-    "module": "dist/main.js",
-    "types": "dist/main.d.ts",
-    "scripts": {
-        "build": "tsup",
-        "dev": "tsup --watch",
-        "test": "deno test",
-        "lint": "oxlint",
-        "test:coverage": "deno test --coverage && deno coverage --lcov --output=./coverage/lcov.info && deno coverage --html",
-        "publish:jsr": "deno run --allow-all ./publishJsr.ts",
-        "sync:jsr": "deno run --allow-read --allow-write ./sync.ts",
-        "release": "semantic-release"
-    },
-    "keywords": [
-        "DI",
-        "dependency injection",
-        "container",
-        "injector",
-        "injection",
-        "dependency",
-        "injection container",
-        "dependency injection container"
-    ],
-    "author": "Alykam Burdzaki <alykam@gmail.com> (https://alykam.com)",
-    "license": "MIT",
-    "devDependencies": {
-        "@swc/core": "^1.13.5",
-        "oxlint": "^1.78.0",
-        "tsup": "^8.5.0",
-        "typescript": "^5.9.2",
-        "semantic-release": "^24.2.3",
-        "@semantic-release/changelog": "^6.0.3",
-        "@semantic-release/git": "^10.0.1",
-        "@semantic-release/exec": "^6.0.3"
-    },
-    "engines": {
-        "node": ">=24.0.0"
-    }
+    "name":  "@collidor/injector",
+    "version":  "1.0.0",
+    "publishConfig":  {
+                          "access":  "public"
+                      },
+    "description":  "A tiny dependency injection container with type inference",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "https://github.com/collidor/injector.git"
+                   },
+    "type":  "module",
+    "main":  "dist/main.cjs",
+    "module":  "dist/main.js",
+    "types":  "dist/main.d.ts",
+    "scripts":  {
+                    "build":  "tsup",
+                    "dev":  "tsup --watch",
+                    "test":  "deno test",
+                    "lint":  "oxlint",
+                    "test:coverage":  "deno test --coverage && deno coverage --lcov --output=./coverage/lcov.info && deno coverage --html",
+                    "publish:jsr":  "deno run --allow-all ./publishJsr.ts",
+                    "sync:jsr":  "deno run --allow-read --allow-write ./sync.ts",
+                    "release":  "semantic-release"
+                },
+    "keywords":  [
+                     "DI",
+                     "dependency injection",
+                     "container",
+                     "injector",
+                     "injection",
+                     "dependency",
+                     "injection container",
+                     "dependency injection container"
+                 ],
+    "author":  "Alykam Burdzaki <alykam@gmail.com> (https://alykam.com)",
+    "license":  "MIT",
+    "devDependencies":  {
+                            "oxlint":  "^1.78.0",
+                            "tsup":  "^8.5.0",
+                            "typescript":  "^5.9.2",
+                            "semantic-release":  "^24.2.3",
+                            "@semantic-release/changelog":  "^6.0.3",
+                            "@semantic-release/git":  "^10.0.1",
+                            "@semantic-release/exec":  "^6.0.3",
+                            "@swc/core":  "^1.13.5"
+                        },
+    "engines":  {
+                    "node":  ">=24.0.0"
+                }
 }
