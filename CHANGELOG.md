@@ -1,3 +1,10 @@
+## [2.4.18](https://github.com/collidor/injector/compare/v2.4.17...v2.4.18) (2026-08-15)
+
+
+### Bug Fixes
+
+* **ci:** add --allow-dirty to jsr publish to ignore uncommitted lockfiles ([474377c](https://github.com/collidor/injector/commit/474377ccaa2e5bbbac43cc8bdf9671fb02a5253a))
+
 ## [1.0.2](https://github.com/collidor/injector/compare/v1.0.1...v1.0.2) (2026-08-15)
 
 
