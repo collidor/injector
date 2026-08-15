@@ -1,1 +1,8 @@
-export { Injector, type Type } from "./injector.ts";
+export {
+  type Inject,
+  Injector,
+  type Register,
+  type SafeInject,
+  type Type,
+  type Unregister,
+} from "./injector.ts";

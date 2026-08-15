@@ -1,4 +1,4 @@
-import { assertEquals, assertThrows } from "jsr:@std/assert";
+import { assertEquals, assertThrows } from "@std/assert";
 import { Injector } from "./main.ts";
 
 Deno.test("Injector - should register and get value", () => {

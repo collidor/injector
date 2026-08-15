@@ -1,19 +1,26 @@
 {
     "name": "@collidor/injector",
-    "version": "2.3.0",
+    "version": "2.4.17",
+    "publishConfig": {
+        "access": "public"
+    },
     "description": "A tiny dependency injection container with type inference",
     "repository": {
         "type": "git",
-        "url": "https://github.com/collidor/injector"
+        "url": "git@github.com:collidor/injector.git"
     },
     "type": "module",
     "main": "dist/main.cjs",
     "module": "dist/main.js",
     "types": "dist/main.d.ts",
     "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
         "test": "deno test",
-        "build": "tsup src/main.ts --sourcemap --dts --format esm,cjs",
-        "test:coverage": "deno test --coverage=cov_profile && deno coverage --html cov_profile"
+        "lint": "oxlint",
+        "test:coverage": "deno test --coverage && deno coverage --lcov --output=./coverage/lcov.info && deno coverage --html",
+        "publish:jsr": "deno run --allow-all ./publishJsr.ts",
+        "sync:jsr": "deno run --allow-read --allow-write ./sync.ts"
     },
     "keywords": [
         "DI",
@@ -28,8 +35,9 @@
     "author": "Alykam Burdzaki <alykam@gmail.com> (https://alykam.com)",
     "license": "MIT",
     "devDependencies": {
-        "@swc/core": "^1.10.14",
-        "tsup": "^8.3.6",
-        "typescript": "^5.7.3"
+        "@swc/core": "^1.13.5",
+        "oxlint": "^1.78.0",
+        "tsup": "^8.5.0",
+        "typescript": "^5.9.2"
     }
 }

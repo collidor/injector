@@ -1,6 +1,6 @@
 {
     "name": "@collidor/injector",
-    "version": "2.3.0",
+    "version": "2.4.17",
     "license": "MIT",
     "exports": "./src/main.ts",
     "publish": {
@@ -27,5 +27,12 @@
                 "no-explicit-any"
             ]
         }
+    },
+    "compilerOptions": {
+        "lib": [
+            "ESNext",
+            "DOM",
+            "deno.window"
+        ]
     }
 }
