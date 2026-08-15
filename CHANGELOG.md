@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/collidor/injector/compare/v1.0.1...v1.0.2) (2026-08-15)
+
+
+### Bug Fixes
+
+* **ci:** rename workflow file to publish.yml to match npm trusted publisher configuration ([a2eb733](https://github.com/collidor/injector/commit/a2eb733cfba07184c957108369275747dffedbf7))
+
 ## [1.0.1](https://github.com/collidor/injector/compare/v1.0.0...v1.0.1) (2026-08-15)
 
 
