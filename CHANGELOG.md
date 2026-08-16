@@ -1,3 +1,10 @@
+## [2.4.20](https://github.com/collidor/injector/compare/v2.4.19...v2.4.20) (2026-08-16)
+
+
+### Bug Fixes
+
+* trigger patch release ([7b8e7cd](https://github.com/collidor/injector/commit/7b8e7cd4eec3ae5dd09a3d270a4e6637e12435a3))
+
 ## [2.4.19](https://github.com/collidor/injector/compare/v2.4.18...v2.4.19) (2026-08-16)
 
 
