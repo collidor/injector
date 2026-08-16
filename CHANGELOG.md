@@ -1,3 +1,12 @@
+## [2.4.19](https://github.com/collidor/injector/compare/v2.4.18...v2.4.19) (2026-08-16)
+
+
+### Bug Fixes
+
+* **ci:** add dummy NPM_TOKEN to satisfy semantic-release preflight check for OIDC ([0475faf](https://github.com/collidor/injector/commit/0475faffb9ac245a783b77379a64899d308665d1))
+* **ci:** decouple npm and jsr publish from semantic-release ([f46f97c](https://github.com/collidor/injector/commit/f46f97c2de9ebae49a26b52964b97e54a1e9695c))
+* **ci:** re-enable native semantic-release npm publishing for OIDC ([994e513](https://github.com/collidor/injector/commit/994e5132fe95c37364d447026c6d17a8bab29294))
+
 ## [2.4.18](https://github.com/collidor/injector/compare/v2.4.17...v2.4.18) (2026-08-15)
 
 
